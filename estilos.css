@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--bs-font-sans-serif);
+}
+H2{
+    color:black;
+    font-size: 0.7rem;
+    text-align: center;
+}
+.blanco{
+    color: white; 
+}
+.verde{
+    color:#25a743;
+}
+.gris{
+    color:#959a9e;
+}
+.navegacionFlex{
+    background-color:#424141;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    .contenedorLogo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;/*horizontal*/
+        align-items: center;/*vertical*/
+        flex-wrap: wrap;
+        .logo{
+            width: 100px;
+        }
+    }
+    .navegacion{     
+        .navItem{
+            font-size: 1rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline;
+            align-items: center;
+             .linkItem {
+                padding-right: 20px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.tituloWeb{
+    font-size: 0.9rem;
+}
+
+.conferencia {
+    height: 500px;
+    background: linear-gradient(to right top, #000000,#00000058, #000000), url("./assets/img/ba1.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-end;/*horizontal*/
+    align-items: end;/*vertical*/
+    padding-right: 8%;
+    padding-bottom: 13%;
+    text-align: right;
+    
+    .itemConferencia{
+        height: 40vh;
+        width: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 10%;
+        .contenedorBotones{
+            display: flex;
+            justify-content: flex-end;
+            
+            .boton{
+                color: white;
+                text-decoration: none;
+                border-style: outset;
+                border-radius: 6px ;
+                padding: 1.5%;
+                margin: 1%;
+                width: fit-content;
+                margin-top: 10%;
+                font-weight: 400;
+                text-align: center;
+                
+            }
+            .botonVerde{
+                background-color: #25a743;
+                border-style: none;
+            }
+        }
+        
+       
+   }
+}
+.contenedorOradores{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+
+    .tarjeta{
+        width: 23%;
+       /* height: 90%;*/
+        border: solid thin #acabab;
+        margin: 2%;
+        .fotoOrador{
+           /* height: auto;*/
+            width: 100%;
+        }
+        .contenedorEtiquetas{
+            display: flex;
+            margin-left: 3%;
+            .etiqueta{
+                width: fit-content;
+                padding: 2px;
+                margin-top: 20px;
+                margin-right: 3;
+                border-radius:10%;
+                font-size: smaller;
+            }
+            .js{
+                background-color: #fec107;    
+            }
+            .react{
+                background-color: #17a2b7;
+            }
+            .negocios{
+                background-color: #6c757c;
+            }
+            .startups{
+                background-color: #dd3546;
+            }
+    
+        }
+        
+    }
+        .nombreOrador{
+            margin-left: 3%;
+        }
+        .textoOrador{
+            margin: 5% 3% 5% 3%;
+            font-weight: 200;
+        }
+}
+.contenedorLugar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .fotoLugar{
+        width: 50%;
+        border: solid white thin;
+    }
+    .lugar{
+        background-color: #333a40;
+        width: 50%;
+        .tituloLugar{
+            font-size:x-large;
+            text-align: left;
+            margin: 4%;
+        }
+       .textoLugar{
+            margin: 5%;
+       }
+        .botonLugar{
+            color: white;
+            text-decoration: none;
+            border: solid thin white;
+            border-radius: 4px ;
+            padding: 1.1%;
+            margin: 4%;
+            width: fit-content;
+            font-size: smaller;
+            font-weight: 200;
+            text-align: center;
+        }
+    }
+    
+}
+
+.tituloSeccion{
+    margin-top: 10px;
+}
+.textoGrande {
+    font-size:2rem; 
+}
+.textoChiquito{
+    font-size: smaller;
+    text-align: left;
+}
+
+.contenedorFormulario{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    /*flex-wrap: wrap;*/
+    margin: 5px;
+    .textoFormulario{
+        text-align: center;
+        margin: 1%;
+        font-size: 0.8rem; 
+    }
+    .name{
+        width: 46%;
+        margin-right: 5%;
+    }
+    .lastname{
+        width: 46%;
+    }
+    .comentario{
+        width: 100%;
+        margin-top: 3%;
+        height: 15vh;
+    }
+    .enviar{
+        background-color: #96c93e;
+        color: white;
+        width: 100%;
+        height: 25px;
+        border-style: none;
+        border-radius: 5px;
+        margin-top: 3%;
+    }
+}
+.footer{
+    background-image: linear-gradient(to left bottom,#1b3743, #1d3c4e, #1d5271);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    .footerList{
+        list-style: none;
+        display: inline;
+    }
+    .linkItem{
+        text-decoration: none;
+    }
+}
+ /*  probando poner la imagen como fondo de un div
+.imgHonolulu{
+    background-image: url(./assets/img/honolulu.jpg);
+   height: 30%;
+}*/

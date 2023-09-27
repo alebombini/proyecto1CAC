@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto CAC Front | Alejandra Bombini</title>
+        <link rel="shortcut icon" href="logoBA.ico" type="imagen/x-icon">
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+       
+      <header class="header">
+        <!--Etiquetas en bloque : ocupan todo el ancho de su contenedor padre -->
+        <!--Todas las etiquetas contenedoras (header, main, body, footer) son en bloque (div es en bloque, span no) -->
+        <div class="navegacionFlex"> 
+            <div class="contenedorLogo">
+                <a href="#">
+                    <img src="./assets/img/codoacodo.png" alt="logo codo a codo 4.0" class="logo">
+                </a>
+
+                <h2 class="tituloWeb blanco">Conf Bs As</h2>
+           </div>
+                <nav class="navegacion"> 
+                    <ul> <!--Listas desordenadas-->
+                        <li class="navItem"><a class="linkItem blanco" href="#conferencia">La conferencia</a></li>
+                        <li class="navItem"><a class="linkItem gris" href="#oradores">Los Oradores</a></li>
+                        <li class="navItem"><a class="linkItem gris" href="#lugar">El lugar y la fecha</a></li>
+                        <li class="navItem"><a class="linkItem gris" href="#formulario">Conviertete en orador</a></li>
+                        <li class="navItem"><a class="linkItem verde" href="./pages/tickets.html">Comprar tickets</a></li>
+                    </ul>
+                </nav> 
+        </div> 
+        <div class="conferencia"> <!--una seccion tiene que tener un titulo, en este caso el principal de la web y tendra una imagen de fondo-->
+            <div class="itemConferencia">
+                <h1>Conf Bs As</h1>
+                <p>Llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de nuestros expertos que estan creando el futuro de Internet.Van a conocer a miembros del evento, a otros estudiantes de Codo a Codo, y los oradores del primer nivel que tenemos para ti. Te esperamos!</p>
+                <div class="contenedorBotones">
+                    <a href="" class="boton">Quiero ser orador</a>
+                    <a href="" class="boton botonVerde" >Comprar tickets</a>
+               </div>
+            </div>
+        </div>
+
+            
+      </header>
+      <main>
+        <section class="sectionOradores">
+            <h2 class="tituloSeccion">CONOCE A LOS <div class="textoGrande">ORADORES</div></h2>
+            <div class="contenedorOradores">
+                <div class="tarjeta">
+                    <img class="fotoOrador" src="./assets/img/steve.jpg" alt="Imagen de Steve Jobs" loading="lazy">
+                    <div class="contenedorEtiquetas">
+                        <h4 class="etiqueta js">JavaScript</h4>
+                        <h4 class="etiqueta react blanco">React</h4>
+                    </div>
+                    <h3 class="nombreOrador">Steve Jobs</h3>
+                    <p class="textoOrador">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+                </div>
+                <div class="tarjeta">
+                    <img class="fotoOrador" src="./assets/img/bill.jpg" width="200px" alt="Imagen de Bill Gates" loading="lazy">
+                        <div class="contenedorEtiquetas">
+                            <h4 class="etiqueta js">JavaScript</h4>
+                            <h4 class="etiqueta react blanco">React</h4>
+                        </div>
+                            <h3 class="nombreOrador">Bill Gates</h3>
+                      
+                    <p class="textoOrador">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+                <div class="tarjeta">
+                    <img class="fotoOrador" src="./assets/img/ada.jpeg" width="200px" alt="Imagen de Ada Lovelace" loading="lazy">
+                    <div class="contenedorEtiquetas">
+                        <h4 class="etiqueta negocios blanco">Negocios</h4>
+                        <h4 class="etiqueta startups blanco">Startups</h4> 
+                    </div>
+                    <h3 class="nombreOrador" >Ada Lovelace</h3>
+                    <p class="textoOrador">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+                </div>
+            </div>
+        </section>
+
+        <section  class="sectionLugar">
+            <div class="contenedorLugar">
+                <!--<div class="imgHonolulu" >-->
+                    <img class="fotoLugar" src="./assets/img/honolulu.jpg" width="300px" alt="Imagen Honolulu" loading="lazy">
+                <!-- </div>--> 
+                <div class="lugar">
+                    <h2 class="tituloLugar blanco">Bs As - Octubre</h2>
+                    <p class="textoLugar blanco">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, quaerat dolor harum quidem incidunt ducimus excepturi sequi ratione aliquam modi optio perferendis inventore id totam eveniet facilis recusandae tempora aliquid.</p>
+                    <a href="" class="botonLugar blanco">Conoce más</a>
+                </div>
+        </div>
+        </section>
+
+        <section class="formulario">
+            <h2 class="tituloSeccion">CONVIERTETE EN UN<div class="textoGrande"> ORADOR</div></h2>
+            <div class="contenedorFormulario">
+               
+                <!--<fieldset>
+                <legend>Conviértete en orador</legend>-->
+                <form action="" class="textoFormulario">
+                    <p class="textoFormulario">Anotate como orador para dar una charla ignite. Cuentanos de que quieres hablar!</p>
+                    <div>
+                        <input class="name" type="text" id="name" name="nombre" placeholder="Nombre" required>
+                        <input class="lastname"type="text" id="lastname" name="apellido" placeholder="Apellido" required>
+                    </div>
+                    <div>
+                        <textarea class="comentario" id="comentario" name="comentario" rows="10" cols="50" placeholder="Sobre que queres hablar" required></textarea>
+                    <p class="textoChiquito">Recuerda incluir un titulo para tu charla</p>
+                    </div>
+                    <div>
+                    <!--  <input type="reset" value="Limpiar formulario">--> 
+                        <input type="submit" value="Enviar" class="enviar" >
+
+                    </div>
+                </form>
+            <!--</fieldset> -->
+           </div>
+            
+        </section>
+    
+      </main>
+       <!--
+      <aside>
+        colocar publicidad que no esta en la maqueta de entrega del proyecto
+        <p>Publicidad</p>
+        <iframe width="300" src="https://www.youtube.com/embed/mCVQgSyjCkI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </aside>-->
+      <footer class="footer">
+        <nav>
+            <ul>
+                <li class="footerList"><a class="linkItem blanco" href="">Preguntas frecuentes</a></li>
+                <li class="footerList"><a class="linkItem blanco" href="">Contáctanos</a></li>
+                <li class="footerList"><a class="linkItem blanco" href="">Prensa</a></li>
+                <li class="footerList"><a class="linkItem blanco" href="">Conferencias</a></li>
+                <li class="footerList"><a class="linkItem blanco" href="">Terminos y condiciones</a></li>
+                <li class="footerList"><a class="linkItem blanco" href="">Privacidad</a></li>
+                <li class="footerList"><a class="linkItem blanco" href="">Estudiantes</a></li>
+            </ul>
+        </nav>
+        
+      </footer>
+    </body>
+</html>
