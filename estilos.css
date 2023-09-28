@@ -273,13 +273,13 @@ H2{
                 justify-content: space-evenly;
                 align-items:center;
                 .footerList{
-                    width: 80px;
+                    width: 85px;
                     list-style: none;
                     display: inline;
                     flex-wrap: nowrap;
                     .linkItem{
                         text-decoration: none; 
-                       /*margin: 3%;*/
+                       margin: 3%;
                     }
                 }
             }
@@ -288,8 +288,76 @@ H2{
     
     
 }
- /*  probando poner la imagen como fondo de un div
-.imgHonolulu{
-    background-image: url(./assets/img/honolulu.jpg);
-   height: 30%;
-}*/
+
+@media only screen and (max-width : 900px){
+    .navegacionFlex{
+        padding: 5px;
+        .contenedorLogo{
+            display: flex;
+          /*  flex-direction: row;*/
+          /*  justify-content: center;/*horizontal*/
+          /*  align-items: center;/*vertical*/
+            flex-wrap: wrap;
+            .logo{
+                width: 80px;
+            }
+        }
+        .navegacion{     
+            .navItem{
+                font-size: 0.7rem;
+                display:block;
+                }
+            }
+        }
+  
+    .contenedorOradores{
+        flex-direction: column;
+        flex-wrap: wrap;
+        /*justify-content: center;*/
+        align-items: center;
+        .tarjeta{
+            width: 80%;
+        }
+    }
+    .contenedorLugar{
+        
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100vh;
+        .fotoLugar{
+            width: 90%;
+        }
+        .lugar{
+            width: 90%;
+            text-align: center;
+            .tituloLugar{
+                text-align: center;
+            }
+            .botonLugar{
+                padding: 1.1%;
+                margin-bottom: 5%;
+            }
+        }
+    }
+
+    .footer{
+        .contenerdorFooter{
+            width: 95%;
+            justify-content: center;
+            align-items: center;
+            .navFooter{
+                .ulFooter{
+                    display: block;
+                    margin: 5%;
+                    .footerList{
+                       font-size: 0.7em; 
+                       width: fit-content;
+                    }
+                }
+            } 
+            
+        }
+    }
+} /*cierre media Queries para mobile*/
