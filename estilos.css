@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-family: var(--bs-font-sans-serif);
+    font-family: 'Open Sans', sans-serif;
 }
 H2{
     color:black;
@@ -113,11 +115,12 @@ H2{
     display: flex;
     flex-direction: row;
     justify-content:center;
-    align-items:center;
+    align-items:flex-start;
     flex-wrap: wrap;
 
     .tarjeta{
         width: 23%;
+
        /* height: 90%;*/
         border: solid thin #acabab;
         margin: 2%;
@@ -130,9 +133,9 @@ H2{
             margin-left: 3%;
             .etiqueta{
                 width: fit-content;
-                padding: 2px;
+                padding: 1px;
                 margin-top: 20px;
-                margin-right: 3;
+                margin-right: 1%;
                 border-radius:10%;
                 font-size: smaller;
             }
@@ -265,12 +268,18 @@ H2{
         flex-direction: column;
         .navFooter{
             .ulFooter{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items:center;
                 .footerList{
+                    width: 80px;
                     list-style: none;
                     display: inline;
+                    flex-wrap: nowrap;
                     .linkItem{
                         text-decoration: none; 
-                        margin: 3%;
+                       /*margin: 3%;*/
                     }
                 }
             }
