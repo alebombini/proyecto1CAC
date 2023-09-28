@@ -206,18 +206,27 @@ H2{
 .textoChiquito{
     font-size: smaller;
     text-align: left;
+    color: #6c757c;
 }
 
 .contenedorFormulario{
     display: flex;
     justify-content:center;
     align-items:center;
+    width: 100%;
     /*flex-wrap: wrap;*/
     margin: 5px;
     .textoFormulario{
         text-align: center;
         margin: 1%;
+        font-size: 1rem; 
+        width: 100%;
+    }
+    .form{
+        text-align: center;
+        margin: 1%;
         font-size: 0.8rem; 
+        width: 50%;
     }
     .name{
         width: 46%;
@@ -245,16 +254,30 @@ H2{
     background-image: linear-gradient(to left bottom,#1b3743, #1d3c4e, #1d5271);
     height: 10vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items:center;
     flex-wrap: wrap;
-    .footerList{
-        list-style: none;
-        display: inline;
+    .contenerdorFooter{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        .navFooter{
+            .ulFooter{
+                .footerList{
+                    list-style: none;
+                    display: inline;
+                    .linkItem{
+                        text-decoration: none; 
+                        margin: 3%;
+                    }
+                }
+            }
+        }
     }
-    .linkItem{
-        text-decoration: none;
-    }
+    
+    
 }
  /*  probando poner la imagen como fondo de un div
 .imgHonolulu{
