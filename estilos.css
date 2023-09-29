@@ -322,12 +322,12 @@ H2{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        width: 90vh;
+       /* width: 100vh;*/
         .fotoLugar{
-            width: 90%;
+            width: 100%;
         }
         .lugar{
-            width: 90%;
+            width: 100%;
             text-align: center;
             .tituloLugar{
                 text-align: center;
