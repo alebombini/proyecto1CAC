@@ -212,6 +212,8 @@ H2{
     flex-wrap: wrap;
     margin: 5px;
     .form{
+        display: flex; /*agrego este commit a ver si se arregla el form en el vivo*/
+        flex-direction: column; /*agrego este commit a ver si se arregla el form en el vivo*/
         text-align: center;
         margin: 1%;
         font-size: 0.8rem; 
