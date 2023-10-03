@@ -229,7 +229,7 @@ H2{
         }
         .name{
             width: 46%;
-            margin-right: 5%;
+           /* margin-right: 5%;*/
         }
         .lastname{
             width: 46%;
@@ -246,7 +246,7 @@ H2{
             height: 25px;
             border-style: none;
             border-radius: 5px;
-            margin-top: 3%;
+           /* margin-top: 3%;*/
         }
     }
     
