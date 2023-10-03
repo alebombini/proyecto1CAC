@@ -8,19 +8,23 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
+.logo{
+    width: 100px;
+    font-size: small;
+}
 H2{
     color:black;
     font-size: 0.7rem;
     text-align: center;
 }
 .blanco{
-    color: white; 
+    color: white!important;
 }
 .verde{
-    color:#25a743;
+    color:#25a743!important;
 }
 .gris{
-    color:#959a9e;
+    color:#959a9e!important;
 }
 .navegacionFlex{
     background-color:#424141;
@@ -38,9 +42,7 @@ H2{
         justify-content: center;/*horizontal*/
         align-items: center;/*vertical*/
         flex-wrap: wrap;
-        .logo{
-            width: 100px;
-        }
+        
     }
     .navegacion{     
         .navItem{
@@ -227,13 +229,15 @@ H2{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            align-items:center;
+            justify-content: space-between;
             align-items: center;
             width: 100%;
             .name{
                 width: 48%;
             }
             .lastname{
-                width: 48%;
+                width: 50%;
             }
         }
         
