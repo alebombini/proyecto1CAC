@@ -226,21 +226,19 @@ H2{
         .contenedorNombres{
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             width: 100%;
             .name{
-                width: 50%;
-               /* margin-right: 5%;*/
+                width: 48%;
             }
             .lastname{
-                width: 50%;
+                width: 48%;
             }
         }
         
         .comentario{
             width: 100%;
-           /* margin-top: 3%;*/
             height: 15vh;
         }
         .textoChiquito{
@@ -255,7 +253,6 @@ H2{
             height: 25px;
             border-style: none;
             border-radius: 5px;
-           /* margin-top: 3%;*/
         }
     }
     
