@@ -232,6 +232,7 @@ H2{
             flex-direction: row;
             justify-content: center;
             align-items: center;
+            width: 100%;
             .name{
                 width: 50%;
                /* margin-right: 5%;*/
