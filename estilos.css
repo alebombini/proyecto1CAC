@@ -163,6 +163,7 @@ H2{
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+   
 
     .fotoLugar{
         width: 50%;
@@ -171,6 +172,7 @@ H2{
     .lugar{
         background-color: #333a40;
         width: 50%;
+        padding-bottom: 3%;
         .tituloLugar{
             font-size:x-large;
             text-align: left;
