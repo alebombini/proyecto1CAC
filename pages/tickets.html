@@ -31,25 +31,74 @@
     </header>
       <main>
         <section>
-            <h1>Comprar tickets</h1>
-            <img src="https://picsum.photos/300/300?grayscale&random=2" alt="random">
+           <div class="contenedorTickets">
+            <div class="tipoTicket">
+              <h2 class="bold">Estudiante</h2>
+              <p class="descuento">Tienen un descuento</p>
+              <p class="bold">80%</p>
+              <p class="asterisco">*presentar documentación</p>
+            </div>
+            <div class="tipoTicket">
+              <h2 class="bold">Trainee</h2>
+              <p class="descuento" >Tienen un descuento</p>
+              <p class="bold">50%</p>
+              <p class="asterisco">*presentar documentación</p>
+            </div>
+            <div class="tipoTicket">
+              <h2 class="bold">Junior</h2>
+              <p class="descuento" >Tienen un descuento</p>
+              <p class="bold">15%</p>
+              <p class="asterisco">*presentar documentación</p>
+            </div>
+          </div> 
         </section>
+ 
+        <section>
+          <h2 class="tituloSeccion">Venta</h2>
+          <p class="compraTickets">VALOR DEL TICKET $200</p>
+          <div class="contenedorFormulario">
+             <form class="formTickets">
+               <div class="contNombre">
+                 <input type="text" class="nombre" placeholder="Nombre">
+                 <input type="text" class="apellido" placeholder="Apellido">
+               </div>
+               <input type="email" class="email" placeholder="Email">
+               <div>
+                 <label for="cantidad">Cantidad</label>
+                 <input type="number" class="cantidad">
+                 <label for="Categoria">Categoria</label>
+                 <select class="categoria">
+                   <option value="estudiante">Estudiante</option>
+                   <option value="trainee">Trainee</option>
+                   <option value="junior">Junior</option>
+                 </select>
+               </div>
+               <p class="total">Total a Pagar: $ </p>
+               <div class="contenedorBotones">
+                 <input type="reset" class="botonTickets" value="Borrar">
+                 <input type="submit" class="botonTickets" value="Resumen">
+               </div>
+               
+             </form>
+          </div>
+         </section>
       </main>
-      <footer>
-        <nav>
-            <a href="https://www.whatsapp.com/" target="_blank">
-            <ul>
-                <li><a href="">Preguntas frecuentes</a></li>
-                <li><a href="">Contáctanos</a></li>
-                <li><a href="">Prensa</a></li>
-                <li><a href="">Conferencias</a></li>
-                <li><a href="">Terminos y condiciones</a></li>
-                <li><a href="">Privacidad</a></li>
-                <li><a href="">Estudiantes</a></li>
-            </ul>
-        </nav>
-
-      </footer> 
+      <footer class="footer">
+        <div class="contenerdorFooter">
+            <nav class="navFooter">
+                <ul class="ulFooter">
+                    <li class="footerList"><a class="linkItem blanco" href="">Preguntas frecuentes</a></li>
+                    <li class="footerList"><a class="linkItem blanco" href="">Contáctanos</a></li>
+                    <li class="footerList"><a class="linkItem blanco" href="">Prensa</a></li>
+                    <li class="footerList"><a class="linkItem blanco" href="">Conferencias</a></li>
+                    <li class="footerList"><a class="linkItem blanco" href="">Terminos y condiciones</a></li>
+                    <li class="footerList"><a class="linkItem blanco" href="">Privacidad</a></li>
+                    <li class="footerList"><a class="linkItem blanco" href="">Estudiantes</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+      </footer>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

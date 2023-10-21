@@ -65,7 +65,7 @@ H2{
 }
 
 .conferencia {
-    height: 500px;
+    height: 80vh;
     background: linear-gradient(to right top, #000000,#00000058, #000000), url("./assets/img/ba1.jpg");
     background-size: cover;
     background-position: bottom;
@@ -249,7 +249,7 @@ H2{
         }
         .textoChiquito{
             font-size: smaller;
-            text-align: left;
+            text-align: left!important;
             color: #6c757c;
         }
         .enviar{
@@ -298,6 +298,71 @@ H2{
     }
     
     
+}
+/*pagina comprar tickets*/
+.compraTickets{
+    text-align: center;
+    font-weight: bolder;
+}
+.contenedorTickets{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
+    width: 100%;
+    .tipoTicket{
+        width: 33vh;
+        height: 30vh;
+        border: lightseagreen solid 1.6px;
+        margin: 1%;
+        text-align: center;
+        padding: 1%;
+        
+    }
+    .tipoTicket:hover{
+        border:rgba(255, 255, 0, 0.454) solid 1.6px;
+    }
+}
+.asterisco{
+    font-size: smaller;
+    color: #424141;
+}
+.bold{
+    font-weight:900;
+    font-size: small;
+
+}
+/*formulario comprar tickets*/
+.nombre{
+    width: 49%;
+    margin-bottom: 2%;
+}
+.apellido{
+    width: 49%;
+}
+.email{
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.botonTickets{
+    color: white;
+    text-decoration: none;
+    border-style: outset;
+    border-radius: 3px ;
+    width: 48%;
+    margin-top: 2%;
+    font-weight: 400;
+    text-align: center;
+    background-color:#96c93e;
+    border-style: none;
+}
+.total{
+    background-color: lightblue;
+    height: 6vh;
+    padding: 2%;
+    margin: 2% 0 2% 0;
 }
 
 @media only screen and (max-width : 900px){
