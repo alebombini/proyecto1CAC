@@ -441,4 +441,9 @@ input:invalid {
             }   
         }
     }
+    .contenedorTickets{
+        display: flex;
+        flex-direction: column;
+    }
+
 } /*cierre media Queries para mobile*/
