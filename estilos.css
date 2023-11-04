@@ -321,7 +321,9 @@ H2{
         
     }
     .tipoTicket:hover{
-        border:rgba(255, 255, 0, 0.454) solid 1.6px;
+        border:rgba(255, 255, 0, 0.454) solid 2px;
+        transform: scale(0.9);
+        transition: 2s;
     }
 }
 .asterisco{
@@ -345,7 +347,9 @@ H2{
     width: 100%;
     margin-bottom: 2%;
 }
-
+input:invalid {
+    border: 2px dashed rgb(173, 45, 45);
+  }
 .botonTickets{
     color: white;
     text-decoration: none;
