@@ -436,6 +436,10 @@ input:invalid {
     .contenedorTickets{
         display: flex;
         flex-direction: column;
+        .tipoTicket{
+            align-items: center;
+            justify-content: center;
+        }
     }
 
 } /*cierre media Queries para mobile*/
