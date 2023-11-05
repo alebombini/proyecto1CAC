@@ -317,7 +317,11 @@ H2{
         border: lightseagreen solid 1.6px;
         margin: 1%;
         text-align: center;
+        align-items: center;
         padding: 1%;
+        .bold{
+            font-size: 1.3em;
+        }
         
     }
     .tipoTicket:hover{

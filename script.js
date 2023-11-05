@@ -1,77 +1,7 @@
-//declaro todos los input en variables
-/*
-let general         = 200;
-let descuentoEstudiante = 40;
-let descuentoTrainee    = 100;
-let descuentoJunior     = 160;
-
-let nombre = document.getElementById("nombre").value;
-let apellido = document.getElementById("apellido").value;
-let email = document.getElementById("email").value;
-let cantidad = document.getElementById("cantidad").value;
-let categoria = document.getElementById("categoria").value;
-
-
-//validacion de datos de nombre y email
-const validarDatos = () => {
-    const nombreInput = document.getElementById('nombre').value;
-    const apellidoInput = document.getElementById("apellido").value;
-    const emailInput = document.getElementById('email').value;
-    let nombreValido = false;
-    let emailValido = false;
-    let apellidoValido = false;
-    if (nombreInput.value === ''){
-        alert("Por favor, ingrese su nombre");
-        } else {
-            nombreValido = true;
-            }
-            if (apellidoInput.value === ''){
-                alert("Por favor, ingrese su nombre");
-                } else {
-                    nombreValido = true;
-                    }        
-    if (emailInput.value === ''){
-                alert("Ingrese un email válido");
-            } else {
-                emailValido = true;
-            }
-}
-*/
-/*
-//funcion para calcular el total
-const calcularTotal = (cat, cant) => {
-    cant = parseInt(cantidad);
-    cat = parseInt(categoria);
-    let totalAPagar;
-    if (cat === "Estudiante"){
-        totalAPagar = descuentoEstudiante * cant;
-        //document.write("<p>" + total + "</p>");//element.innerHTML
-        //alert("categoria "+ categoria + "cantidad " + cantidad);
-    }else if (cat === "Trainee"){
-        totalAPagar = descuentoTrainee * cant;
-        //document.write("<p>" + total + "</p>");
-        //alert("categoria "+ categoria + "cantidad " + cantidad);    
-    }else if (cat === "Junior"){
-        totalAPagar = descuentoJunior * cant;
-        //document.write("<p>" + total + "</p>");
-        //alert("categoria "+ categoria + "cantidad " + cantidad);
-    } else if (cat === "General"){
-        totalAPagar = 200 * cant;
-        //document.write("<p>" + total + "</p>");
-        alert(totalAPagar);
-    }//return totalAPagar;
-    total.innerHTML = totalAPagar;
-    alert(totalAPagar);
-}
-
-resumen.addEventListener('submit', calcularTotal);
- 
-*/
 let valorTicket         = 200;
 let descuentoEstudiante = 80;
 let descuentoTrainee    = 50;
 let descuentoJunior     = 15;
-
 
 let nombre              = document.getElementById("nombre");
 let divErrorNombre      = document.getElementById("mensajeErrorNombre");
@@ -165,3 +95,74 @@ const resetTotalAPagar = () => {
     total.innerHTML = "";
 }
 borrar.addEventListener('click', resetTotalAPagar);
+
+
+//declaro todos los input en variables
+/*
+let general         = 200;
+let descuentoEstudiante = 40;
+let descuentoTrainee    = 100;
+let descuentoJunior     = 160;
+
+let nombre = document.getElementById("nombre").value;
+let apellido = document.getElementById("apellido").value;
+let email = document.getElementById("email").value;
+let cantidad = document.getElementById("cantidad").value;
+let categoria = document.getElementById("categoria").value;
+
+
+//validacion de datos de nombre y email
+const validarDatos = () => {
+    const nombreInput = document.getElementById('nombre').value;
+    const apellidoInput = document.getElementById("apellido").value;
+    const emailInput = document.getElementById('email').value;
+    let nombreValido = false;
+    let emailValido = false;
+    let apellidoValido = false;
+    if (nombreInput.value === ''){
+        alert("Por favor, ingrese su nombre");
+        } else {
+            nombreValido = true;
+            }
+            if (apellidoInput.value === ''){
+                alert("Por favor, ingrese su nombre");
+                } else {
+                    nombreValido = true;
+                    }        
+    if (emailInput.value === ''){
+                alert("Ingrese un email válido");
+            } else {
+                emailValido = true;
+            }
+}
+*/
+/*
+//funcion para calcular el total
+const calcularTotal = (cat, cant) => {
+    cant = parseInt(cantidad);
+    cat = parseInt(categoria);
+    let totalAPagar;
+    if (cat === "Estudiante"){
+        totalAPagar = descuentoEstudiante * cant;
+        //document.write("<p>" + total + "</p>");//element.innerHTML
+        //alert("categoria "+ categoria + "cantidad " + cantidad);
+    }else if (cat === "Trainee"){
+        totalAPagar = descuentoTrainee * cant;
+        //document.write("<p>" + total + "</p>");
+        //alert("categoria "+ categoria + "cantidad " + cantidad);    
+    }else if (cat === "Junior"){
+        totalAPagar = descuentoJunior * cant;
+        //document.write("<p>" + total + "</p>");
+        //alert("categoria "+ categoria + "cantidad " + cantidad);
+    } else if (cat === "General"){
+        totalAPagar = 200 * cant;
+        //document.write("<p>" + total + "</p>");
+        alert(totalAPagar);
+    }//return totalAPagar;
+    total.innerHTML = totalAPagar;
+    alert(totalAPagar);
+}
+
+resumen.addEventListener('submit', calcularTotal);
+ 
+*/
