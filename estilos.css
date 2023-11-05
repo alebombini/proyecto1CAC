@@ -335,18 +335,6 @@ H2{
     font-size: small;
 
 }
-/*formulario comprar tickets
-.nombre{
-    width: 49%;
-    margin-bottom: 2%;
-}
-.apellido{
-    width: 49%;
-}
-.email{
-    width: 100%;
-    margin-bottom: 2%;
-}*/
 input:invalid {
     border: 2px solid rgb(173, 45, 45);
   }

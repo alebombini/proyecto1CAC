@@ -74,15 +74,15 @@ let descuentoJunior     = 15;
 
 
 let nombre              = document.getElementById("nombre");
-let divErrorNombre      = document.getElementById("memsajeErrorNombre");
+let divErrorNombre      = document.getElementById("mensajeErrorNombre");
 let apellido            = document.getElementById("apellido");
-let divErrorApellido    = document.getElementById("memsajeErrorApellido");
+let divErrorApellido    = document.getElementById("mensajeErrorApellido");
 let mail                = document.getElementById("mail");
-let divErrorEmail       = document.getElementById("memsajeErrorEmail");
+let divErrorEmail       = document.getElementById("mensajeErrorEmail");
 let cantidadTickets     = document.getElementById("cantidad");
-let divErrorCantidad    = document.getElementById("memsajeErrorCantidad");
+let divErrorCantidad    = document.getElementById("mensajeErrorCantidad");
 let categoria           = document.getElementById("categoria");
-let divErrorCategoria   = document.getElementById("memsajeErrorCategoria");
+let divErrorCategoria   = document.getElementById("mensajeErrorCategoria");
 
 const quitarClaseError = () => {
     let listaNodos = document.querySelectorAll(".form-control, .form-select");
@@ -139,21 +139,23 @@ const totalAPagar = () => {
     let totalValorTickets = (cantidadTickets.value) * valorTicket;
 
     switch (categoria.value) {
-        case "0":
+        case "general":
             totalValorTickets = totalValorTickets;
             break;
-        case "1":
+        case "estudiante":
+            //totalValorTickets = 40 * cantidadTickets.value;
             totalValorTickets = totalValorTickets - (descuentoEstudiante / 100 * totalValorTickets);
             break;
-        case "2":
+        case "trainee":
             totalValorTickets = totalValorTickets - (descuentoTrainee / 100 * totalValorTickets);
             break;
-        case "3":
+        case "junior":
             totalValorTickets = totalValorTickets - (descuentoJunior / 100 * totalValorTickets);
             break;
     }
+   
     total.innerHTML = totalValorTickets;
-    console.log("funciona");
+   
 }
 
 resumen.addEventListener('click', totalAPagar);
