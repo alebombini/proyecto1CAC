@@ -335,7 +335,7 @@ H2{
     font-size: small;
 
 }
-/*formulario comprar tickets*/
+/*formulario comprar tickets
 .nombre{
     width: 49%;
     margin-bottom: 2%;
@@ -346,9 +346,9 @@ H2{
 .email{
     width: 100%;
     margin-bottom: 2%;
-}
+}*/
 input:invalid {
-    border: 2px dashed rgb(173, 45, 45);
+    border: 2px solid rgb(173, 45, 45);
   }
 .botonTickets{
     color: white;
