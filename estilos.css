@@ -300,6 +300,12 @@ H2{
     
 }
 /*pagina comprar tickets*/
+
+.nav-link:hover{
+    transition: all ease-in-out 0.8s;
+    transform: scale(1.05);
+    border: 1px dotted whitesmoke;
+}
 .compraTickets{
     text-align: center;
     font-weight: bolder;
