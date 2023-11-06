@@ -4,23 +4,17 @@ let descuentoTrainee    = 50;
 let descuentoJunior     = 15;
 
 let nombre              = document.getElementById("nombre");
-let divErrorNombre      = document.getElementById("mensajeErrorNombre");
 let apellido            = document.getElementById("apellido");
-let divErrorApellido    = document.getElementById("mensajeErrorApellido");
 let mail                = document.getElementById("mail");
-let divErrorEmail       = document.getElementById("mensajeErrorEmail");
 let cantidadTickets     = document.getElementById("cantidad");
-let divErrorCantidad    = document.getElementById("mensajeErrorCantidad");
 let categoria           = document.getElementById("categoria");
-let divErrorCategoria   = document.getElementById("mensajeErrorCategoria");
+
 
 const quitarClaseError = () => {
     let listaNodos = document.querySelectorAll(".form-control, .form-select");
     for (let i = 0; i < listaNodos.length; i++) {
         listaNodos[i].classList.remove('is-invalid')
     }
-    let listaNodosdiv = document.querySelectorAll(".invalid-feedback");
-
 }
 
 const totalAPagar = () => {
